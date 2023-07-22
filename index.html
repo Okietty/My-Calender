@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calender</title>
+    <link rel = 'stylesheet' href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <header class = frontPage>
+            <div id = "title">My Calender 23/24</div>
+        </header>
+
+        <div class = "toggle-btn1" onclick = "openNav()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id = "sidebar">
+            <ul class = "months">
+                <li><h1 class = "close" onclick = "closeNav()">Close &times;</h1></li>
+                <li><a class = "myCal" onclick="frontPageToggle()">My Calender</a></li>
+                <li><a class = "yearNav" onclick = "display2023()">2023</a></li>
+                <li><a id="#july23Jump" class = 'monthNav'>july</a></liv>
+                <li><a id="#august23Jump" class = 'monthNav'>august</a></liv>
+                <li><a id="#september23Jump" class = 'monthNav'>september</a></liv>
+                <li><a id="#october23Jump" class = 'monthNav'>october</a></liv>
+                <li><a id="#november23Jump" class = 'monthNav'>november</a></liv>
+                <li><a id="#december23Jump" class = 'monthNav'>december</a></li>
+                <li><a class = "yearNav" onclick = "display2024()">2024</a></li>
+                <li><a id="#january24Jump" class = 'monthNav'>january</a></li>
+                <li><a id="#february24Jump" class = 'monthNav'>february</a></li>
+                <li><a id="#march24Jump" class = 'monthNav'>march</a></li>
+                <li><a id="#april24Jump" class = 'monthNav'>April</a></li>
+                <li><a id="#may24Jump" class = 'monthNav'>May</a></li>
+                <li><a id="#june24Jump" class = 'monthNav'>June</a></li>
+            </ul>
+        </div>
+
+        <main class = "calenderWrapper">
+            <div class = "yearTitleWrapper yearTitle2023" id="2023Jump">
+                <div class = "yearTitle">2023</div>
+            </div>
+            <section class = "monthContainer" id = "july23Jump">
+                <div class = "monthWrapper july2023">
+                    <div class = "monthDays">
+                        <div id="daySpacing">July</div>
+                        <div id = "weekDay">Sunday</div>
+                        <div id = "weekDay">Monday</div>
+                        <div id = "weekDay">Tuesday</div>
+                        <div id = "weekDay">Wednesday</div>
+                        <div id = "weekDay">Thursday</div>
+                        <div id = "weekDay">Friday</div>
+                        <div id = "weekDay">Saturday</div>
+                        <div id = "day">1</div>
+                        <div id = "day">2</div>
+                        <div id = "day">3</div>
+                        <div id = "day">4</div>
+                        <div id = "day">5</div>
+                        <div id = "day">6</div>
+                        <div id = "day">7</div>
+                        <div id = "day">8</div>
+                        <div id = "day">9</div>
+                        <div id = "day">10</div>
+                        <div id = "day">11</div>
+                        <div id = "day">12</div>
+                        <div id = "day">13</div>
+                        <div id = "day">14</div>
+                        <div id = "day">15</div>
+                        <div id = "day">16</div>
+                        <div id = "day">17</div>
+                        <div id = "day">18</div>
+                        <div id = "day">19</div>
+                        <div id = "day">20</div>
+                        <div id = "day">21</div>
+                        <div id = "day">22</div>
+                        <div id = "day">23</div>
+                        <div id = "day">24</div>
+                        <div id = "day">25</div>
+                        <div id = "day">26</div>
+                        <div id = "day">27</div>
+                        <div id = "day">28</div>
+                        <div id = "day">29</div>
+                        <div id = "day">30</div>
+                        <div id = "day">31</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class = "monthContainer" id = "august23Jump">
+                <div class = "monthWrapper august2023">
+                    <div class = "monthDays">
+                        <div id="daySpacing">August</div>
+                        <div id = "weekDay">Sunday</div>
+                        <div id = "weekDay">Monday</div>
+                        <div id = "weekDay">Tuesday</div>
+                        <div id = "weekDay">Wednesday</div>
+                        <div id = "weekDay">Thursday</div>
+                        <div id = "weekDay">Friday</div>
+                        <div id = "weekDay">Saturday</div>
+                        <div id = "day">1</div>
+                        <div id = "day">2</div>
+                        <div id = "day">3</div>
+                        <div id = "day">4</div>
+                        <div id = "day">5</div>
+                        <div id = "day">6</div>
+                        <div id = "day">7</div>
+                        <div id = "day">8</div>
+                        <div id = "day">9</div>
+                        <div id = "day">10</div>
+                        <div id = "day">11</div>
+                        <div id = "day">12</div>
+                        <div id = "day">13</div>
+                        <div id = "day">14</div>
+                        <div id = "day">15</div>
+                        <div id = "day">16</div>
+                        <div id = "day">17</div>
+                        <div id = "day">18</div>
+                        <div id = "day">19</div>
+                        <div id = "day">20</div>
+                        <div id = "day">21</div>
+                        <div id = "day">22</div>
+                        <div id = "day">23</div>
+                        <div id = "day">24</div>
+                        <div id = "day">25</div>
+                        <div id = "day">26</div>
+                        <div id = "day">27</div>
+                        <div id = "day">28</div>
+                        <div id = "day">29</div>
+                        <div id = "day">30</div>
+                        <div id = "day">31</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class = "monthContainer" id = "september23Jump">
+                <div class = "monthWrapper september2023">
+                    <div class = "monthDays">
+                        <div id="daySpacing">September</div>
+                        <div id = "weekDay">Sunday</div>
+                        <div id = "weekDay">Monday</div>
+                        <div id = "weekDay">Tuesday</div>
+                        <div id = "weekDay">Wednesday</div>
+                        <div id = "weekDay">Thursday</div>
+                        <div id = "weekDay">Friday</div>
+                        <div id = "weekDay">Saturday</div>
+                        <div id = "day">1</div>
+                        <div id = "day">2</div>
+                        <div id = "day">3</div>
+                        <div id = "day">4</div>
+                        <div id = "day">5</div>
+                        <div id = "day">6</div>
+                        <div id = "day">7</div>
+                        <div id = "day">8</div>
+                        <div id = "day">9</div>
+                        <div id = "day">10</div>
+                        <div id = "day">11</div>
+                        <div id = "day">12</div>
+                        <div id = "day">13</div>
+                        <div id = "day">14</div>
+                        <div id = "day">15</div>
+                        <div id = "day">16</div>
+                        <div id = "day">17</div>
+                        <div id = "day">18</div>
+                        <div id = "day">19</div>
+                        <div id = "day">20</div>
+                        <div id = "day">21</div>
+                        <div id = "day">22</div>
+                        <div id = "day">23</div>
+                        <div id = "day">24</div>
+                        <div id = "day">25</div>
+                        <div id = "day">26</div>
+                        <div id = "day">27</div>
+                        <div id = "day">28</div>
+                        <div id = "day">29</div>
+                        <div id = "day">30</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class = "monthContainer" id = "october23Jump">
+                <div class = "monthWrapper october2023">
+                    <div class = "monthDays">
+                        <div id="daySpacing">October</div>
+                        <div id = "weekDay">Sunday</div>
+                        <div id = "weekDay">Monday</div>
+                        <div id = "weekDay">Tuesday</div>
+                        <div id = "weekDay">Wednesday</div>
+                        <div id = "weekDay">Thursday</div>
+                        <div id = "weekDay">Friday</div>
+                        <div id = "weekDay">Saturday</div>
+                        <div id = "day">1</div>
+                        <div id = "day">2</div>
+                        <div id = "day">3</div>
+                        <div id = "day">4</div>
+                        <div id = "day">5</div>
+                        <div id = "day">6</div>
+                        <div id = "day">7</div>
+                        <div id = "day">8</div>
+                        <div id = "day">9</div>
+                        <div id = "day">10</div>
+                        <div id = "day">11</div>
+                        <div id = "day">12</div>
+                        <div id = "day">13</div>
+                        <div id = "day">14</div>
+                        <div id = "day">15</div>
+                        <div id = "day">16</div>
+                        <div id = "day">17</div>
+                        <div id = "day">18</div>
+                        <div id = "day">19</div>
+                        <div id = "day">20</div>
+                        <div id = "day">21</div>
+                        <div id = "day">22</div>
+                        <div id = "day">23</div>
+                        <div id = "day">24</div>
+                        <div id = "day">25</div>
+                        <div id = "day">26</div>
+                        <div id = "day">27</div>
+                        <div id = "day">28</div>
+                        <div id = "day">29</div>
+                        <div id = "day">30</div>
+                        <div id = "day">31</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class = "monthContainer" id = "november23Jump">
+                <div class = "monthWrapper november2023">
+                    <div class = "monthDays">
+                        <div id="daySpacing">November</div>
+                        <div id = "weekDay">Sunday</div>
+                        <div id = "weekDay">Monday</div>
+                        <div id = "weekDay">Tuesday</div>
+                        <div id = "weekDay">Wednesday</div>
+                        <div id = "weekDay">Thursday</div>
+                        <div id = "weekDay">Friday</div>
+                        <div id = "weekDay">Saturday</div>
+                        <div id = "day">1</div>
+                        <div id = "day">2</div>
+                        <div id = "day">3</div>
+                        <div id = "day">4</div>
+                        <div id = "day">5</div>
+                        <div id = "day">6</div>
+                        <div id = "day">7</div>
+                        <div id = "day">8</div>
+                        <div id = "day">9</div>
+                        <div id = "day">10</div>
+                        <div id = "day">11</div>
+                        <div id = "day">12</div>
+                        <div id = "day">13</div>
+                        <div id = "day">14</div>
+                        <div id = "day">15</div>
+                        <div id = "day">16</div>
+                        <div id = "day">17</div>
+                        <div id = "day">18</div>
+                        <div id = "day">19</div>
+                        <div id = "day">20</div>
+                        <div id = "day">21</div>
+                        <div id = "day">22</div>
+                        <div id = "day">23</div>
+                        <div id = "day">24</div>
+                        <div id = "day">25</div>
+                        <div id = "day">26</div>
+                        <div id = "day">27</div>
+                        <div id = "day">28</div>
+                        <div id = "day">29</div>
+                        <div id = "day">30</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class = "monthContainer" id = "december23Jump">
+                <div class = "monthWrapper december2023">
+                    <div class = "monthDays">
+                        <div id="daySpacing">December</div>
+                        <div id = "weekDay">Sunday</div>
+                        <div id = "weekDay">Monday</div>
+                        <div id = "weekDay">Tuesday</div>
+                        <div id = "weekDay">Wednesday</div>
+                        <div id = "weekDay">Thursday</div>
+                        <div id = "weekDay">Friday</div>
+                        <div id = "weekDay">Saturday</div>
+                        <div id = "day">1</div>
+                        <div id = "day">2</div>
+                        <div id = "day">3</div>
+                        <div id = "day">4</div>
+                        <div id = "day">5</div>
+                        <div id = "day">6</div>
+                        <div id = "day">7</div>
+                        <div id = "day">8</div>
+                        <div id = "day">9</div>
+                        <div id = "day">10</div>
+                        <div id = "day">11</div>
+                        <div id = "day">12</div>
+                        <div id = "day">13</div>
+                        <div id = "day">14</div>
+                        <div id = "day">15</div>
+                        <div id = "day">16</div>
+                        <div id = "day">17</div>
+                        <div id = "day">18</div>
+                        <div id = "day">19</div>
+                        <div id = "day">20</div>
+                        <div id = "day">21</div>
+                        <div id = "day">22</div>
+                        <div id = "day">23</div>
+                        <div id = "day">24</div>
+                        <div id = "day">25</div>
+                        <div id = "day">26</div>
+                        <div id = "day">27</div>
+                        <div id = "day">28</div>
+                        <div id = "day">29</div>
+                        <div id = "day">30</div>
+                        <div id = "day">31</div>
+                    </div>
+                </div>
+            </section>
+
+            <div class = "yearTitleWrapper yearTitle2024" id="2024Jump">
+                <div class = "yearTitle">2024</div>
+            </div>
+            <section class = "monthContainer" id = "january24Jump">
+                <div class = "monthWrapper january2024">
+                    <div class = "monthDays">
+                        <div id="daySpacing">January</div>
+                        <div id = "weekDay">Sunday</div>
+                        <div id = "weekDay">Monday</div>
+                        <div id = "weekDay">Tuesday</div>
+                        <div id = "weekDay">Wednesday</div>
+                        <div id = "weekDay">Thursday</div>
+                        <div id = "weekDay">Friday</div>
+                        <div id = "weekDay">Saturday</div>
+                        <div id = "day">1</div>
+                        <div id = "day">2</div>
+                        <div id = "day">3</div>
+                        <div id = "day">4</div>
+                        <div id = "day">5</div>
+                        <div id = "day">6</div>
+                        <div id = "day">7</div>
+                        <div id = "day">8</div>
+                        <div id = "day">9</div>
+                        <div id = "day">10</div>
+                        <div id = "day">11</div>
+                        <div id = "day">12</div>
+                        <div id = "day">13</div>
+                        <div id = "day">14</div>
+                        <div id = "day">15</div>
+                        <div id = "day">16</div>
+                        <div id = "day">17</div>
+                        <div id = "day">18</div>
+                        <div id = "day">19</div>
+                        <div id = "day">20</div>
+                        <div id = "day">21</div>
+                        <div id = "day">22</div>
+                        <div id = "day">23</div>
+                        <div id = "day">24</div>
+                        <div id = "day">25</div>
+                        <div id = "day">26</div>
+                        <div id = "day">27</div>
+                        <div id = "day">28</div>
+                        <div id = "day">29</div>
+                        <div id = "day">30</div>
+                        <div id = "day">31</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class = "monthContainer" id = "february24Jump">
+                <div class = "monthWrapper february2024">
+                    <div class = "monthDays">
+                        <div id="daySpacing">February</div>
+                        <div id = "weekDay">Sunday</div>
+                        <div id = "weekDay">Monday</div>
+                        <div id = "weekDay">Tuesday</div>
+                        <div id = "weekDay">Wednesday</div>
+                        <div id = "weekDay">Thursday</div>
+                        <div id = "weekDay">Friday</div>
+                        <div id = "weekDay">Saturday</div>
+                        <div id = "day">1</div>
+                        <div id = "day">2</div>
+                        <div id = "day">3</div>
+                        <div id = "day">4</div>
+                        <div id = "day">5</div>
+                        <div id = "day">6</div>
+                        <div id = "day">7</div>
+                        <div id = "day">8</div>
+                        <div id = "day">9</div>
+                        <div id = "day">10</div>
+                        <div id = "day">11</div>
+                        <div id = "day">12</div>
+                        <div id = "day">13</div>
+                        <div id = "day">14</div>
+                        <div id = "day">15</div>
+                        <div id = "day">16</div>
+                        <div id = "day">17</div>
+                        <div id = "day">18</div>
+                        <div id = "day">19</div>
+                        <div id = "day">20</div>
+                        <div id = "day">21</div>
+                        <div id = "day">22</div>
+                        <div id = "day">23</div>
+                        <div id = "day">24</div>
+                        <div id = "day">25</div>
+                        <div id = "day">26</div>
+                        <div id = "day">27</div>
+                        <div id = "day">28</div>
+                        <div id = "day">29</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class = "monthContainer" id = "march24Jump">
+                <div class = "monthWrapper march2024">
+                    <div class = "monthDays">
+                        <div id="daySpacing">March</div>
+                        <div id = "weekDay">Sunday</div>
+                        <div id = "weekDay">Monday</div>
+                        <div id = "weekDay">Tuesday</div>
+                        <div id = "weekDay">Wednesday</div>
+                        <div id = "weekDay">Thursday</div>
+                        <div id = "weekDay">Friday</div>
+                        <div id = "weekDay">Saturday</div>
+                        <div id = "day">1</div>
+                        <div id = "day">2</div>
+                        <div id = "day">3</div>
+                        <div id = "day">4</div>
+                        <div id = "day">5</div>
+                        <div id = "day">6</div>
+                        <div id = "day">7</div>
+                        <div id = "day">8</div>
+                        <div id = "day">9</div>
+                        <div id = "day">10</div>
+                        <div id = "day">11</div>
+                        <div id = "day">12</div>
+                        <div id = "day">13</div>
+                        <div id = "day">14</div>
+                        <div id = "day">15</div>
+                        <div id = "day">16</div>
+                        <div id = "day">17</div>
+                        <div id = "day">18</div>
+                        <div id = "day">19</div>
+                        <div id = "day">20</div>
+                        <div id = "day">21</div>
+                        <div id = "day">22</div>
+                        <div id = "day">23</div>
+                        <div id = "day">24</div>
+                        <div id = "day">25</div>
+                        <div id = "day">26</div>
+                        <div id = "day">27</div>
+                        <div id = "day">28</div>
+                        <div id = "day">29</div>
+                        <div id = "day">30</div>
+                        <div id = "day">31</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class = "monthContainer" id = "april24Jump">
+                <div class = "monthWrapper april2024">
+                    <div class = "monthDays">
+                        <div id="daySpacing">April</div>
+                        <div id = "weekDay">Sunday</div>
+                        <div id = "weekDay">Monday</div>
+                        <div id = "weekDay">Tuesday</div>
+                        <div id = "weekDay">Wednesday</div>
+                        <div id = "weekDay">Thursday</div>
+                        <div id = "weekDay">Friday</div>
+                        <div id = "weekDay">Saturday</div>
+                        <div id = "day">1</div>
+                        <div id = "day">2</div>
+                        <div id = "day">3</div>
+                        <div id = "day">4</div>
+                        <div id = "day">5</div>
+                        <div id = "day">6</div>
+                        <div id = "day">7</div>
+                        <div id = "day">8</div>
+                        <div id = "day">9</div>
+                        <div id = "day">10</div>
+                        <div id = "day">11</div>
+                        <div id = "day">12</div>
+                        <div id = "day">13</div>
+                        <div id = "day">14</div>
+                        <div id = "day">15</div>
+                        <div id = "day">16</div>
+                        <div id = "day">17</div>
+                        <div id = "day">18</div>
+                        <div id = "day">19</div>
+                        <div id = "day">20</div>
+                        <div id = "day">21</div>
+                        <div id = "day">22</div>
+                        <div id = "day">23</div>
+                        <div id = "day">24</div>
+                        <div id = "day">25</div>
+                        <div id = "day">26</div>
+                        <div id = "day">27</div>
+                        <div id = "day">28</div>
+                        <div id = "day">29</div>
+                        <div id = "day">30</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class = "monthContainer" id = "may24Jump">
+                <div class = "monthWrapper may2024">
+                    <div class = "monthDays">
+                        <div id="daySpacing">May</div>
+                        <div id = "weekDay">Sunday</div>
+                        <div id = "weekDay">Monday</div>
+                        <div id = "weekDay">Tuesday</div>
+                        <div id = "weekDay">Wednesday</div>
+                        <div id = "weekDay">Thursday</div>
+                        <div id = "weekDay">Friday</div>
+                        <div id = "weekDay">Saturday</div>
+                        <div id = "day">1</div>
+                        <div id = "day">2</div>
+                        <div id = "day">3</div>
+                        <div id = "day">4</div>
+                        <div id = "day">5</div>
+                        <div id = "day">6</div>
+                        <div id = "day">7</div>
+                        <div id = "day">8</div>
+                        <div id = "day">9</div>
+                        <div id = "day">10</div>
+                        <div id = "day">11</div>
+                        <div id = "day">12</div>
+                        <div id = "day">13</div>
+                        <div id = "day">14</div>
+                        <div id = "day">15</div>
+                        <div id = "day">16</div>
+                        <div id = "day">17</div>
+                        <div id = "day">18</div>
+                        <div id = "day">19</div>
+                        <div id = "day">20</div>
+                        <div id = "day">21</div>
+                        <div id = "day">22</div>
+                        <div id = "day">23</div>
+                        <div id = "day">24</div>
+                        <div id = "day">25</div>
+                        <div id = "day">26</div>
+                        <div id = "day">27</div>
+                        <div id = "day">28</div>
+                        <div id = "day">29</div>
+                        <div id = "day">30</div>
+                        <div id = "day">31</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class = "monthContainer" id = "june24Jump">
+                <div class = "monthWrapper june2024">
+                    <div class = "monthDays">
+                        <div id="daySpacing">June</div>
+                        <div id = "weekDay">Sunday</div>
+                        <div id = "weekDay">Monday</div>
+                        <div id = "weekDay">Tuesday</div>
+                        <div id = "weekDay">Wednesday</div>
+                        <div id = "weekDay">Thursday</div>
+                        <div id = "weekDay">Friday</div>
+                        <div id = "weekDay">Saturday</div>
+                        <div id = "day">1</div>
+                        <div id = "day">2</div>
+                        <div id = "day">3</div>
+                        <div id = "day">4</div>
+                        <div id = "day">5</div>
+                        <div id = "day">6</div>
+                        <div id = "day">7</div>
+                        <div id = "day">8</div>
+                        <div id = "day">9</div>
+                        <div id = "day">10</div>
+                        <div id = "day">11</div>
+                        <div id = "day">12</div>
+                        <div id = "day">13</div>
+                        <div id = "day">14</div>
+                        <div id = "day">15</div>
+                        <div id = "day">16</div>
+                        <div id = "day">17</div>
+                        <div id = "day">18</div>
+                        <div id = "day">19</div>
+                        <div id = "day">20</div>
+                        <div id = "day">21</div>
+                        <div id = "day">22</div>
+                        <div id = "day">23</div>
+                        <div id = "day">24</div>
+                        <div id = "day">25</div>
+                        <div id = "day">26</div>
+                        <div id = "day">27</div>
+                        <div id = "day">28</div>
+                        <div id = "day">29</div>
+                        <div id = "day">30</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+    <script src = "script.js"></script>
+</html>

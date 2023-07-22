@@ -1,0 +1,285 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+body { 
+    height: 99%;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.frontPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    transition: .7s;
+}
+
+.frontPage.frontPageToggle {
+    z-index: -1;
+    top: -100%;
+    color: white;
+}
+
+/* Navigation bar tab */
+#sidebar {
+    position: fixed;
+    display: flex; 
+    overflow-y: auto;
+    flex-direction: column;
+    height: inherit;
+    width: 260px;
+    background: black;
+    /* background-image: radial-gradient( circle 815px at 23.4% -21.8%,  rgba(9,29,85,1) 0.2%, rgba(0,0,0,1) 100.2% ); */
+    left: -260px;
+    z-index: 1;
+    transition: .4s;
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+.close {
+    font-size: 55px;
+    font-family: inherit;
+    margin: 0;
+    padding-left: 20px;
+    padding-top: 20px;
+    text-align: left;
+    color: white;
+    transition: cursor;
+}
+
+.close:hover {
+    cursor: pointer;
+}
+
+.months {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style-type: none;
+    height: 90%;
+    font-size: 40px;
+    margin: 0;
+    font-family: inherit;
+}
+
+.myCal {
+    color: white;
+    transition: 200ms;
+}
+
+.myCal:hover {
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.yearNav {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: 200ms;
+}
+
+.yearNav:hover {
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.monthNav {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    transition: 200ms;
+}
+.monthNav:hover {
+    padding-left: 40px;
+    cursor: pointer;
+}
+
+.toggle-btn1 {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+.toggle-btn1 span {
+    width: 65px;
+    height: 10px;
+    background: black;
+    display: block;
+    margin-top: 7px;
+}
+
+/* Page Title */
+#title {
+    font-size: 80px;
+}
+
+.calenderWrapper {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    transition: .7s;
+}
+
+.addFullHeight {
+    height: 95%;
+    top: 0;
+}
+
+.yearTitleWrapper {
+    height: 10%;
+    margin: 8px;
+    margin-bottom: 10px;
+    background: white;
+    padding: auto;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+.yearTitle {
+    text-align: center;
+    color: white;
+    background: black;
+    /* background-image: linear-gradient( 109.6deg,  rgba(103,30,117,1) 11.2%, rgba(252,76,2,1) 91.1% ); */
+    margin: auto;
+    padding: auto;
+    width: 88%;
+    height: 80px;
+    font-size: 60px;
+}
+
+.monthContainer {
+    margin: 0 auto;
+    padding: 0 auto;
+    padding-top: 5%;
+    font-size: 50px;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background: black;   
+    border-bottom: 2px white solid;
+    display: none;
+}
+
+.monthWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.monthDays {
+    height: 550px;
+    width: 90%;
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(7, 7fr);
+    align-items: space-around;
+}
+
+#daySpacing {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    /* background-image: linear-gradient( 89.4deg,  rgba(194,0,39,1) 0.8%, rgba(10,35,104,1) 99.4% ); */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#day {
+    font-size: 36px;
+    padding: 10px;
+}
+
+#day .notes {
+    display: block;
+    font-size: 20px;
+    width: 100%; 
+    background: black; 
+    border: 0px; 
+    color: white;
+}
+
+.appear{
+    display: block;
+}
+
+.july2023 {
+    /* background-image: url("http://www.guideoftheworld.com/wp-content/uploads/map/color_map_of_maryland_state.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.august2023 {
+    /* background-image: url("http://2.bp.blogspot.com/-Ce9uWPTfo9E/U_g57tmR5LI/AAAAAAAAAyI/MG8iwSgxItY/s1600/free-birthday-greeting-card-latest-18.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.september2023 {
+    /* background-image: url(); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.october2023 {
+    /* background-image: url("http://www.viajejet.com/wp-content/viajes/halloween-calabaza1.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.november2023 {
+    /* background-image: url("https://info.junk-king.com/hs-fs/hubfs/thanksgiving2.jpg?width=3575&name=thanksgiving2.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.december2023 {
+    /* background-image: url("https://4.bp.blogspot.com/-0TNTYdRRRKc/WCgwP0tmKGI/AAAAAAAAClk/TthrbleKCR4r8zhsx8rThiZt3coUuzewACLcB/s1600/Santa-from-north-pole-Christmas-wishes-for-kids-picture.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.january2024 {
+    /* background-image: url(); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.february2024 {
+    /* background-image: url(); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.march2024 {
+    /* background-image: url(); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.april2024 {
+    /* background-image: url("http://www.desicomments.com/wp-content/uploads/2017/01/April-Fools-.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.may2024 {
+    /* background-image: url(); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.june2024 {
+    /* background-image: url("http://wallpapercave.com/wp/P4SGXBz.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
